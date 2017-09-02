@@ -23,3 +23,6 @@ Route::get('/user/{id}', function ($id) {
     return \App\User::find($id);
 });
 
+Route::get('/erunda', function () {
+    return view('main');
+});
