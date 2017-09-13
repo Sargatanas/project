@@ -12,14 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/kitsune', function () {
-    return view('kitsune');
-});
-
-Route::get('/user/{id}', function ($id) {
-    return \App\User::find($id);
+    return view('news-preview');
 });
 
